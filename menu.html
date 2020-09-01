@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Menu Example</title>
+	<style>
+		
+		#menu{
+			background-color: red;
+			list-style-type: none;
+			margin: 0;
+			padding: 10px;
+			width: 200px;
+		}
+		
+		#menu li{
+			background-color: yellow;
+			margin-top: 5px;
+			margin-bottom: 5px;
+			text-align: center;
+			border: 1px solid black;
+		}
+		
+		#menu a{
+			background-color: lime;
+			display: block;
+		}
+		
+		#menu a:hover{
+			background-color: silver;
+		}
+		
+		#menu a#current-page{
+			background-color: yellow;
+			font-weight: bold;
+		}
+		
+	</style>
+</head>
+<body>
+	
+	<ul id="menu">
+		<li><a href="/test">Test</a></li>
+		<li><a href="/test" id="current-page">Hello</a></li>
+		<li><a href="/test">Nein</a></li>
+		<li><a href="/test">Yes</a></li>
+	</ul>
+	
+</body>
+</html>
